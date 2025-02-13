@@ -1,10 +1,6 @@
 console.log("running...");
 
-const assert = (condition: boolean, message?: string) => {
-  if (!condition) {
-    throw new Error(message);
-  }
-};
+import { assert } from "../utilities/assert";
 
 const binarySearch = (sortedArray: number[], target: number): number => {
   const index = Math.floor((sortedArray.length - 1) / 2);
