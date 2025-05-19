@@ -16,7 +16,7 @@ const graph: DirectedGraph = {
   ],
 };
 
-const breadthFirstSearch = (graph: DirectedGraph, source: string, target: string): string[] => {
+const directedBreadthFirstSearch = (graph: DirectedGraph, source: string, target: string): string[] => {
   if (source === target) {
     return [source];
   }
@@ -44,4 +44,4 @@ const breadthFirstSearch = (graph: DirectedGraph, source: string, target: string
   return visited;
 };
 
-console.log(breadthFirstSearch(graph, "A", "F"));
+console.log(directedBreadthFirstSearch(graph, "A", "F"));
